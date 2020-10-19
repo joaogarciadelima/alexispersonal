@@ -6,6 +6,11 @@ verify_ssl = true
 [dev-packages]
 flake8 = "*"
 pytest-django = "*"
+pytest = "*"
+model-bakery = "*"
+django-debug-toolbar = "*"
+pytest-cov = "*"
+codecov = "*"
 
 [packages]
 django = "*"
@@ -14,6 +19,8 @@ python-decouple = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
 collectfast = "*"
+django-s3-folder-storage = "*"
+sentry-sdk = "*"
 
 [requires]
 python_version = "3.8"
