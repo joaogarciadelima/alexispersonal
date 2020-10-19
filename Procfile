@@ -1,0 +1,1 @@
+web: gunicorn pyalexis.wsgi --log-file -
