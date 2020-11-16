@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'collectfast',
     'django.contrib.staticfiles',
-    'pyalexis.base'
+    'pyalexis.base',
+    'pyalexis.videos',
 ]
 
 MIDDLEWARE = [
