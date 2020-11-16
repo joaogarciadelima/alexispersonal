@@ -21,6 +21,7 @@ psycopg2-binary = "*"
 collectfast = "*"
 django-s3-folder-storage = "*"
 sentry-sdk = "*"
+django-debug-toolbar = "*"
 
 [requires]
 python_version = "3.8"

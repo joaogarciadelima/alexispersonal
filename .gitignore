@@ -111,3 +111,7 @@ mediafiles
 
 # vscode
 .vscode
+
+# postgres
+.pgdata
+
