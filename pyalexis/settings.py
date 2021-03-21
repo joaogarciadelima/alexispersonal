@@ -34,10 +34,15 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())  # ['alexispersonal.herokuap
 
 AUTH_USER_MODEL = 'base.User'
 
+LOGIN_URL = '/contas/login/'
+
+LOGIN_REDIRECT_URL = LOGOUT_REDIRECT_URL = '/'
+
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'ordered_model',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -46,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pyalexis.base',
     'pyalexis.videos',
+    'pyalexis.modulos',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +77,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'pyalexis.modulos.context_processors.listar_modulos',
             ],
         },
     },
